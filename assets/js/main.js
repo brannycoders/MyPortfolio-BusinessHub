@@ -295,12 +295,103 @@
 								$(this).remove()
 							});
 							$('#submit').removeAttr('disabled');
+							
 						}
 					);
 				});
 				return false;
 			});
 		});
+
+
+
+		// $('.contact-form').each(function() {
+		// 	var formInstance = $(this);
+		// 	formInstance.submit(function(event) {
+		// 		event.preventDefault();  // Prevent the default form submission
+		
+		// 		var action = $(this).attr('action');
+		
+		// 		$("#message").slideUp(750, function() {
+		// 			$('#message').hide(); // Ensure message is hidden
+		
+		// 			$('#submit')
+		// 				.after('<img src="assets/img/ajax-loader.gif" class="loader" />')
+		// 				.attr('disabled', 'disabled'); // Disable button to prevent multiple submissions
+		
+		// 			// Make the AJAX POST request
+		// 			$.post(action, {
+		// 				name: $('#name').val(),
+		// 				email: $('#email').val(),
+		// 				phone: $('#phone').val(),
+		// 				comments: $('#comments').val()
+		// 			})
+		// 			.done(function(data) {
+		// 				// Success handling
+		// 				document.getElementById('message').innerHTML = data;
+		// 				$('#message').slideDown('slow');
+		// 				$('.contact-form img.loader').fadeOut('slow', function() {
+		// 					$(this).remove();
+		// 				});
+		// 				$('#submit').removeAttr('disabled'); // Re-enable the button
+		// 			})
+		// 			.fail(function(jqXHR, textStatus, errorThrown) {
+		// 				// Error handling
+		// 				document.getElementById('message').innerHTML = "There was an error: " + textStatus;
+		// 				$('#message').slideDown('slow');
+		// 				$('#submit').removeAttr('disabled'); // Re-enable the button on error
+		// 			});
+		// 		});
+				
+		// 		return false; // Prevent default action
+		// 	});
+		// });
+		
+
+
+		// $(document).ready(function() {
+        //     $('.contact-form').each(function() {
+        //         var formInstance = $(this);
+        //         formInstance.submit(function(event) {
+        //             event.preventDefault();  // Prevent the default form submission
+
+        //             var action = $(this).attr('action');
+
+        //             $("#message").slideUp(750, function() {
+        //                 $('#message').hide(); // Ensure message is hidden
+
+        //                 $('#submit')
+        //                     .after('<img src="assets/img/ajax-loader.gif" class="loader" />')
+        //                     .attr('disabled', 'disabled'); // Disable button to prevent multiple submissions
+
+        //                 // Make the AJAX POST request
+        //                 $.post(action, {
+        //                     name: $('#name').val(),
+        //                     email: $('#email').val(),
+        //                     phone: $('#phone').val(),
+        //                     comments: $('#comments').val()
+        //                 })
+        //                 .done(function(data) {
+        //                     // Success handling
+        //                     document.getElementById('message').innerHTML = data;
+        //                     $('#message').slideDown('slow');
+        //                     $('.contact-form img.loader').fadeOut('slow', function() {
+        //                         $(this).remove();
+        //                     });
+        //                     $('#submit').removeAttr('disabled'); // Re-enable the button
+        //                 })
+        //                 .fail(function(jqXHR, textStatus, errorThrown) {
+        //                     // Error handling
+        //                     document.getElementById('message').innerHTML = "There was an error: " + textStatus;
+        //                     $('#message').slideDown('slow');
+        //                     $('#submit').removeAttr('disabled'); // Re-enable the button on error
+        //                 });
+        //             });
+
+        //             return false; // Prevent default action
+        //         });
+        //     });
+        // });
 
 
 	}); // end document ready function
